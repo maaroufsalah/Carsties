@@ -1,4 +1,3 @@
-using System.Linq.Expressions;
 using AuctionService.Data;
 using Microsoft.EntityFrameworkCore;
 
