@@ -27,7 +27,8 @@ public class AuctionUpdatedConsumer : IConsumer<AuctionUpdated>
                 x.Color,
                 x.Make,
                 x.Model,
-                x.MileAge
+                x.Year,
+                x.MileAge,
             }, item)
             .ExecuteAsync();
 
