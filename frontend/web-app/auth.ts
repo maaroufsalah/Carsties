@@ -34,7 +34,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 session.user.username = token.username;
                 session.accessToken = token.accessToken;
             }
-            console.log(`session :${JSON.stringify(session)}`);
             return session;
         }
     }
