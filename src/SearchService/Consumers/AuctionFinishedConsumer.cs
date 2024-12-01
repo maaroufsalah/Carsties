@@ -21,6 +21,9 @@ public class AuctionFinishedConsumer : IConsumer<AuctionFinished>
 
         auction.Status = "Finished";
 
+        // auction.Status = auction.SoldAmount > auction.ReservePrice
+        //     ? Status.Finished : Status.ReserveNotMet;
+
         await auction.SaveAsync();
     }
 }
